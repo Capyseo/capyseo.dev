@@ -60,6 +60,57 @@
 
 <Hero />
 
+<!-- Packages Section -->
+<section class="py-20">
+	<div class="container">
+		<div class="text-center mb-12">
+			<Badge variant="capybara" class="mb-4">Open Source</Badge>
+			<h2 class="font-display text-4xl mb-4">Choose Your Package</h2>
+			<p class="text-muted-foreground max-w-2xl mx-auto">
+				Capyseo is split into focused packages so you can use exactly what you need.
+				Most developers start with the CLI for quick wins.
+			</p>
+		</div>
+
+		<div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+			{#each packages as pkg}
+				<Card class="flex flex-col h-full">
+					<CardHeader>
+						<div class="w-12 h-12 rounded-lg bg-capybara-100 dark:bg-capybara-900 flex items-center justify-center mb-3">
+							<HugeiconsIcon icon={pkg.icon} size={24} class="text-capybara-600 dark:text-capybara-400" />
+						</div>
+						<CardTitle class="text-xl">{pkg.title}</CardTitle>
+						<CardDescription class="text-sm">{pkg.description}</CardDescription>
+					</CardHeader>
+					<CardContent class="flex-1 flex flex-col">
+						<p class="text-sm text-muted-foreground mb-4 italic">{pkg.useCase}</p>
+						<div class="mt-auto space-y-3">
+							<code class="block text-xs bg-muted px-3 py-2 rounded-md overflow-x-auto">
+								{pkg.install}
+							</code>
+							<a href={pkg.repo} target="_blank" rel="noopener noreferrer" class="block">
+								<Button variant="outline" size="sm" class="w-full">
+									<HugeiconsIcon icon={Github01Icon} size={16} />
+									View on GitHub
+								</Button>
+							</a>
+						</div>
+					</CardContent>
+				</Card>
+			{/each}
+		</div>
+
+		<div class="text-center mt-8">
+			<p class="text-muted-foreground mb-4">
+				Not sure which to pick? Start with the CLI — it's the quickest way to see Capyseo in action.
+			</p>
+			<code class="inline-block bg-capybara-100 dark:bg-capybara-900 text-capybara-700 dark:text-capybara-300 px-4 py-2 rounded-lg font-mono text-sm">
+				npx @capyseo/cli analyze ./your-site
+			</code>
+		</div>
+	</div>
+</section>
+
 <FeatureGrid />
 
 <QuickStart />
@@ -229,57 +280,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Packages Section -->
-<section class="py-20">
-	<div class="container">
-		<div class="text-center mb-12">
-			<Badge variant="capybara" class="mb-4">Open Source</Badge>
-			<h2 class="font-display text-4xl mb-4">Choose Your Package</h2>
-			<p class="text-muted-foreground max-w-2xl mx-auto">
-				Capyseo is split into focused packages so you can use exactly what you need.
-				Most developers start with the CLI for quick wins.
-			</p>
-		</div>
-
-		<div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-			{#each packages as pkg}
-				<Card class="flex flex-col h-full">
-					<CardHeader>
-						<div class="w-12 h-12 rounded-lg bg-capybara-100 dark:bg-capybara-900 flex items-center justify-center mb-3">
-							<HugeiconsIcon icon={pkg.icon} size={24} class="text-capybara-600 dark:text-capybara-400" />
-						</div>
-						<CardTitle class="text-xl">{pkg.title}</CardTitle>
-						<CardDescription class="text-sm">{pkg.description}</CardDescription>
-					</CardHeader>
-					<CardContent class="flex-1 flex flex-col">
-						<p class="text-sm text-muted-foreground mb-4 italic">{pkg.useCase}</p>
-						<div class="mt-auto space-y-3">
-							<code class="block text-xs bg-muted px-3 py-2 rounded-md overflow-x-auto">
-								{pkg.install}
-							</code>
-							<a href={pkg.repo} target="_blank" rel="noopener noreferrer" class="block">
-								<Button variant="outline" size="sm" class="w-full">
-									<HugeiconsIcon icon={Github01Icon} size={16} />
-									View on GitHub
-								</Button>
-							</a>
-						</div>
-					</CardContent>
-				</Card>
-			{/each}
-		</div>
-
-		<div class="text-center mt-8">
-			<p class="text-muted-foreground mb-4">
-				Not sure which to pick? Start with the CLI — it's the quickest way to see Capyseo in action.
-			</p>
-			<code class="inline-block bg-capybara-100 dark:bg-capybara-900 text-capybara-700 dark:text-capybara-300 px-4 py-2 rounded-lg font-mono text-sm">
-				npx @capyseo/cli analyze ./your-site
-			</code>
 		</div>
 	</div>
 </section>
