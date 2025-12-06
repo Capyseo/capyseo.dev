@@ -5,8 +5,9 @@
 	import { HugeiconsIcon } from '@hugeicons/svelte';
 	import {
 		Github01Icon,
-		Mail01Icon,
-		GlobalIcon,
+	Mail01Icon,
+	Twitter01Icon,
+	GlobalIcon,
 		CommandLineIcon,
 		CodeIcon,
 		GridViewIcon
@@ -86,25 +87,31 @@
 			<h2 class="font-display text-3xl mb-8 text-center">Maintainers</h2>
 			<Card class="max-w-sm mx-auto">
 				<CardHeader class="text-center">
-					<div class="w-20 h-20 rounded-full bg-capybara-100 dark:bg-capybara-900 flex items-center justify-center mx-auto mb-4">
-						<span class="text-2xl font-bold text-capybara-600 dark:text-capybara-400">H</span>
-					</div>
-					<CardTitle>hffmnnj</CardTitle>
-					<CardDescription>Creator & Lead Maintainer</CardDescription>
-				</CardHeader>
+				<div class="w-20 h-20 rounded-full bg-capybara-100 dark:bg-capybara-900 flex items-center justify-center mx-auto mb-4">
+					<span class="text-2xl font-bold text-capybara-600 dark:text-capybara-400">JH</span>
+				</div>
+				<CardTitle>James Hoffmann</CardTitle>
+				<p class="text-sm text-muted-foreground">@hffmnnj</p>
+				<CardDescription>Creator & Lead Maintainer</CardDescription>
+			</CardHeader>
 				<CardContent>
 					<div class="flex justify-center gap-2">
-						<a href="https://github.com/hffmnnj" target="_blank" rel="noopener noreferrer">
-							<Button variant="ghost" size="icon">
-								<HugeiconsIcon icon={Github01Icon} size={20} />
-							</Button>
-						</a>
-						<a href="https://hffmnn.com" target="_blank" rel="noopener noreferrer">
-							<Button variant="ghost" size="icon">
-								<HugeiconsIcon icon={GlobalIcon} size={20} />
-							</Button>
-						</a>
-					</div>
+					<a href="https://github.com/hffmnnj" target="_blank" rel="noopener noreferrer">
+						<Button variant="ghost" size="icon">
+							<HugeiconsIcon icon={Github01Icon} size={20} />
+						</Button>
+					</a>
+					<a href="https://x.com/hffmnnj" target="_blank" rel="noopener noreferrer">
+						<Button variant="ghost" size="icon">
+							<HugeiconsIcon icon={Twitter01Icon} size={20} />
+						</Button>
+					</a>
+					<a href="mailto:hffmnnj@tuta.io">
+						<Button variant="ghost" size="icon">
+							<HugeiconsIcon icon={Mail01Icon} size={20} />
+						</Button>
+					</a>
+				</div>
 				</CardContent>
 			</Card>
 		</div>
