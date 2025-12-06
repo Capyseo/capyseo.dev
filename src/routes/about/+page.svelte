@@ -6,8 +6,35 @@
 	import {
 		Github01Icon,
 		Mail01Icon,
-		GlobalIcon
+		GlobalIcon,
+		CommandLineIcon,
+		CodeIcon,
+		GridViewIcon
 	} from '@hugeicons/core-free-icons';
+
+	const repos = [
+		{
+			name: '@capyseo/core',
+			title: 'Core',
+			description: 'Analysis engine with 50+ SEO rules',
+			icon: CodeIcon,
+			repo: 'https://github.com/Capyseo/capyseo'
+		},
+		{
+			name: '@capyseo/cli',
+			title: 'CLI',
+			description: 'Command-line tool with AI autofixes',
+			icon: CommandLineIcon,
+			repo: 'https://github.com/Capyseo/capyseo'
+		},
+		{
+			name: '@capyseo/adapter-sveltekit',
+			title: 'SvelteKit',
+			description: 'Vite plugin & server hooks',
+			icon: GridViewIcon,
+			repo: 'https://github.com/Capyseo/capyseo'
+		}
+	];
 </script>
 
 <svelte:head>
@@ -30,7 +57,7 @@
 <section class="py-16">
 	<div class="container">
 		<div class="max-w-3xl mx-auto prose prose-neutral dark:prose-invert">
-			<h2 class="font-display">The Story</h2>
+		<h2 class="font-display">The Story</h2>
 			<p>
 				Capyseo was born from the frustration of dealing with SEO as a developer.
 				Existing tools were either too basic, too expensive, or required too much
@@ -43,28 +70,12 @@
 				whether you forgot a meta tag or if your images have alt text.
 			</p>
 
-			<h2 class="font-display">The Technology</h2>
-			<p>
-				Capyseo is built with modern tools and designed for performance:
-			</p>
-			<ul>
-				<li><strong>Bun</strong> - Lightning-fast JavaScript runtime</li>
-				<li><strong>Cheerio</strong> - Fast HTML parsing and analysis</li>
-				<li><strong>Google Gemini</strong> - Optional AI-powered suggestions</li>
-				<li><strong>TypeScript</strong> - Type-safe codebase throughout</li>
-			</ul>
-			<p>
-				The project follows a monorepo structure with separate packages for the
-				core analyzer, CLI, and framework adapters. This allows developers to
-				use only what they need.
-			</p>
-
-			<h2 class="font-display">Open Source</h2>
-			<p>
-				Capyseo is fully open source under the MIT license. This means you can
-				use it, modify it, and contribute to it freely. We believe SEO tools
-				should be accessible to everyone, not just those with enterprise budgets.
-			</p>
+		<h2 class="font-display">Open Source</h2>
+		<p>
+			Capyseo is fully open source under the MIT license. This means you can
+			use it, modify it, and contribute to it freely. We believe SEO tools
+			should be accessible to everyone, not just those with enterprise budgets.
+		</p>
 		</div>
 	</div>
 </section>
@@ -102,22 +113,48 @@
 
 <section class="py-16">
 	<div class="container">
+		<div class="max-w-3xl mx-auto">
+			<h2 class="font-display text-3xl mb-8 text-center">Our Packages</h2>
+			<div class="grid sm:grid-cols-3 gap-4">
+				{#each repos as repo}
+					<a href={repo.repo} target="_blank" rel="noopener noreferrer" class="block">
+						<Card class="h-full hover:border-capybara-400 transition-colors">
+							<CardHeader class="text-center">
+								<div class="w-12 h-12 rounded-lg bg-capybara-100 dark:bg-capybara-900 flex items-center justify-center mx-auto mb-3">
+									<HugeiconsIcon icon={repo.icon} size={24} class="text-capybara-600 dark:text-capybara-400" />
+								</div>
+								<CardTitle class="text-lg">{repo.title}</CardTitle>
+								<CardDescription class="text-sm">{repo.description}</CardDescription>
+							</CardHeader>
+						</Card>
+					</a>
+				{/each}
+			</div>
+			<p class="text-center text-muted-foreground mt-6 text-sm">
+				All packages are open source under the MIT license. Click any card to view on GitHub.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="py-16">
+	<div class="container">
 		<div class="max-w-2xl mx-auto text-center">
 			<h2 class="font-display text-3xl mb-4">Get in Touch</h2>
 			<p class="text-muted-foreground mb-8">
 				Have questions, suggestions, or want to contribute?
 			</p>
 			<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-				<a href="https://github.com/Capyseo/capyseo/issues" target="_blank" rel="noopener noreferrer">
-					<Button variant="outline" size="lg">
+				<a href="https://github.com/Capyseo" target="_blank" rel="noopener noreferrer">
+					<Button variant="capybara" size="lg">
 						<HugeiconsIcon icon={Github01Icon} size={20} />
-						Open an Issue
+						View on GitHub
 					</Button>
 				</a>
-				<a href="https://github.com/Capyseo/capyseo/discussions" target="_blank" rel="noopener noreferrer">
+				<a href="https://github.com/Capyseo/capyseo.dev/issues" target="_blank" rel="noopener noreferrer">
 					<Button variant="outline" size="lg">
 						<HugeiconsIcon icon={Mail01Icon} size={20} />
-						Start a Discussion
+						Report an Issue
 					</Button>
 				</a>
 			</div>

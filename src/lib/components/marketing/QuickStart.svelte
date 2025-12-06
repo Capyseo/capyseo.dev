@@ -4,6 +4,7 @@
 	const tabs = [
 		{ id: 'install', label: 'Install' },
 		{ id: 'analyze', label: 'Analyze' },
+		{ id: 'autofix', label: 'Autofix' },
 		{ id: 'ai', label: 'AI' },
 		{ id: 'watch', label: 'Watch' }
 	];
@@ -90,6 +91,39 @@
 								<div class="text-capybara-400">Total Issues: 3 (1 error, 2 warnings)</div>
 							</div>
 						{:else if activeTab === 2}
+							<!-- Autofix Tab -->
+							<div class="space-y-1">
+								<div>
+									<span class="text-capybara-400">$</span>
+									<span class="text-white ml-2">capyseo analyze ./my-site --fix</span>
+								</div>
+								<div class="mt-2 text-capybara-300">Analyzing and applying autofixes...</div>
+								<div class="mt-3 text-capybara-100">/index.html</div>
+								<div class="ml-3">
+									<span class="text-green-400">✓</span>
+									<span class="text-green-300 ml-1">Fixed: Added missing viewport meta</span>
+								</div>
+								<div class="ml-3">
+									<span class="text-green-400">✓</span>
+									<span class="text-green-300 ml-1">Fixed: Added charset UTF-8</span>
+								</div>
+								<div class="mt-3 text-capybara-100">/about.html</div>
+								<div class="ml-3">
+									<span class="text-green-400">✓</span>
+									<span class="text-green-300 ml-1">Fixed: Added canonical URL</span>
+								</div>
+								<div class="mt-4 text-capybara-600">=================================================</div>
+								<div class="text-green-400">✓ Applied 3 fixes to 2 files</div>
+								<div class="mt-3 text-capybara-500"># For AI-powered intelligent fixes:</div>
+								<div>
+									<span class="text-capybara-400">$</span>
+									<span class="text-white ml-2">capyseo analyze ./my-site --ai --ai-fix</span>
+								</div>
+								<div class="mt-2 text-cyan-400">✨ AI Fix Estimation:</div>
+								<div class="ml-3 text-cyan-300">   Fixable issues: 12/15 (80%)</div>
+								<div class="ml-3 text-cyan-300">   Estimated cost: $0.0024</div>
+							</div>
+						{:else if activeTab === 3}
 							<!-- AI Tab -->
 							<div class="space-y-1">
 								<div>
