@@ -6,7 +6,7 @@
 	import {
 		Github01Icon,
 	Mail01Icon,
-	Twitter01Icon,
+	NewTwitterIcon,
 	GlobalIcon,
 		CommandLineIcon,
 		CodeIcon,
@@ -103,7 +103,7 @@
 					</a>
 					<a href="https://x.com/hffmnnj" target="_blank" rel="noopener noreferrer">
 						<Button variant="ghost" size="icon">
-							<HugeiconsIcon icon={Twitter01Icon} size={20} />
+							<HugeiconsIcon icon={NewTwitterIcon} size={20} />
 						</Button>
 					</a>
 					<a href="mailto:hffmnnj@tuta.io">
