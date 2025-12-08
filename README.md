@@ -2,7 +2,7 @@
 
 **Marketing and documentation website** for the Capyseo SEO toolkit.
 
-![Capyseo Website](./assets/banners/capyseo-website-banner.png)
+![Capyseo Website](./assets/capyseo-website-banner.png)
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Svelte 5](https://img.shields.io/badge/Svelte-5.0+-FF3E00?logo=svelte)](https://svelte.dev)
