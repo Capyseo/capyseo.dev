@@ -16,6 +16,7 @@
 		],
 		company: [
 			{ href: '/about', label: 'About' },
+			{ href: 'mailto:chill@capyseo.dev', label: 'Contact' },
 			{ href: 'https://github.com/hffmnnj', label: 'Maintainer', external: true }
 		]
 	};

@@ -177,16 +177,16 @@
 				Have questions, suggestions, or want to contribute?
 			</p>
 			<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-				<a href="https://github.com/Capyseo" target="_blank" rel="noopener noreferrer">
+				<a href="mailto:chill@capyseo.dev">
 					<Button variant="capybara" size="lg">
-						<HugeiconsIcon icon={Github01Icon} size={20} />
-						View on GitHub
+						<HugeiconsIcon icon={Mail01Icon} size={20} />
+						Email Us
 					</Button>
 				</a>
-				<a href="https://github.com/Capyseo/capyseo.dev/issues" target="_blank" rel="noopener noreferrer">
+				<a href="https://github.com/Capyseo" target="_blank" rel="noopener noreferrer">
 					<Button variant="outline" size="lg">
-						<HugeiconsIcon icon={Mail01Icon} size={20} />
-						Report an Issue
+						<HugeiconsIcon icon={Github01Icon} size={20} />
+						View on GitHub
 					</Button>
 				</a>
 			</div>
