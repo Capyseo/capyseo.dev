@@ -56,3 +56,7 @@ coverage
 .cache
 *.tgz
 capyseo-analysis.html
+
+# Claude Code
+CLAUDE.md
+.claude/
