@@ -43,11 +43,37 @@
 </script>
 
 <svelte:head>
-	<title>Documentation - Capyseo</title>
+	<title>Documentation - Capyseo AI SEO Toolkit Guides & API</title>
 	<meta
 		name="description"
-		content="Learn how to use Capyseo, the AI-powered SEO toolkit. Installation guides, CLI reference, rules documentation, and integration guides."
+		content="Learn how to use Capyseo, the AI-powered SEO toolkit. Installation guides, CLI reference, 46 SEO rules documentation, AI provider configuration, and framework integrations."
 	/>
+	<link rel="canonical" href="https://capyseo.dev/docs" />
+	<meta property="og:title" content="Documentation - Capyseo AI SEO Toolkit" />
+	<meta property="og:description" content="Learn how to use Capyseo, the AI-powered SEO toolkit. Installation guides, CLI reference, 46 SEO rules documentation, and framework integrations." />
+	<meta property="og:image" content="https://capyseo.dev/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:url" content="https://capyseo.dev/docs" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Capyseo" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Documentation - Capyseo AI SEO Toolkit" />
+	<meta name="twitter:description" content="Learn how to use Capyseo, the AI-powered SEO toolkit. Installation guides, CLI reference, and framework integrations." />
+	<meta name="twitter:image" content="https://capyseo.dev/og-image.png" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Capyseo Documentation",
+		"description": "Learn how to use Capyseo, the AI-powered SEO toolkit. Installation guides, CLI reference, 46 SEO rules documentation, and framework integrations.",
+		"url": "https://capyseo.dev/docs",
+		"mainEntity": {
+			"@type": "SoftwareApplication",
+			"name": "Capyseo",
+			"applicationCategory": "DeveloperApplication",
+			"operatingSystem": "Any"
+		}
+	})}</script>`}
 </svelte:head>
 
 <div class="docs-home">

@@ -19,6 +19,11 @@
 	const prevNext = $derived(findPrevNext(navigation, slug));
 	const breadcrumbs = $derived(findBreadcrumbs(navigation, slug));
 
+	// Generate a fallback description from the title if none provided
+	const pageDescription = $derived(
+		page.description || `Learn about ${page.title} in Capyseo, the AI-powered SEO toolkit for developers.`
+	);
+
 	// Custom renderers for code blocks and callouts
 	const plugins: Plugin[] = [
 		gfmPlugin(),
@@ -33,7 +38,44 @@
 
 <svelte:head>
 	<title>{page.title} - Capyseo Docs</title>
-	<meta name="description" content={page.description} />
+	<meta name="description" content={pageDescription} />
+	<link rel="canonical" href="https://capyseo.dev/docs/{slug}" />
+	<!-- Open Graph -->
+	<meta property="og:title" content="{page.title} - Capyseo Docs" />
+	<meta property="og:description" content={pageDescription} />
+	<meta property="og:url" content="https://capyseo.dev/docs/{slug}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:image" content="https://capyseo.dev/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:site_name" content="Capyseo" />
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="{page.title} - Capyseo Docs" />
+	<meta name="twitter:description" content={pageDescription} />
+	<meta name="twitter:image" content="https://capyseo.dev/og-image.png" />
+	<!-- JSON-LD -->
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "TechArticle",
+		"headline": page.title,
+		"description": pageDescription,
+		"url": `https://capyseo.dev/docs/${slug}`,
+		"image": "https://capyseo.dev/og-image.png",
+		"author": {
+			"@type": "Organization",
+			"name": "Capyseo",
+			"url": "https://capyseo.dev"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "Capyseo",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://capyseo.dev/logo.png"
+			}
+		}
+	})}</script>`}
 </svelte:head>
 
 <div class="doc-page">

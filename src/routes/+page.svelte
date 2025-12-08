@@ -51,11 +51,39 @@
 
 <svelte:head>
 	<title>Capyseo - AI-Powered SEO Toolkit for Developers</title>
-	<meta name="description" content="Framework-agnostic, AI-powered SEO toolkit with 50+ rules and intelligent autofixes. Analyze your website, get actionable insights, and automatically fix issues. Free and open source." />
+	<meta name="description" content="Open source SEO toolkit with 50+ rules and AI autofixes. Analyze websites, get actionable insights, and fix issues automatically." />
+	<link rel="canonical" href="https://capyseo.dev/" />
 	<meta property="og:title" content="Capyseo - AI-Powered SEO Toolkit" />
-	<meta property="og:description" content="Framework-agnostic, AI-powered SEO toolkit with 50+ rules and intelligent autofixes. Free and open source." />
-	<meta property="og:image" content="/og-image.png" />
+	<meta property="og:description" content="Open source SEO toolkit with 50+ rules and AI autofixes. Analyze websites and fix issues automatically." />
+	<meta property="og:image" content="https://capyseo.dev/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:url" content="https://capyseo.dev/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Capyseo" />
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Capyseo - AI-Powered SEO Toolkit" />
+	<meta name="twitter:description" content="Open source SEO toolkit with 50+ rules and AI autofixes. Analyze websites and fix issues automatically." />
+	<meta name="twitter:image" content="https://capyseo.dev/og-image.png" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "SoftwareApplication",
+		"name": "Capyseo",
+		"description": "Open source SEO toolkit with 50+ rules and AI autofixes. Analyze websites, get actionable insights, and fix issues automatically.",
+		"url": "https://capyseo.dev",
+		"applicationCategory": "DeveloperApplication",
+		"operatingSystem": "Any",
+		"offers": {
+			"@type": "Offer",
+			"price": "0",
+			"priceCurrency": "USD"
+		},
+		"author": {
+			"@type": "Organization",
+			"name": "Capyseo",
+			"url": "https://capyseo.dev"
+		}
+	})}</script>`}
 </svelte:head>
 
 <Hero />

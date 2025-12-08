@@ -39,8 +39,33 @@
 </script>
 
 <svelte:head>
-	<title>About - Capyseo</title>
-	<meta name="description" content="Learn about Capyseo, the AI-powered SEO toolkit built for developers." />
+	<title>About Capyseo - Open Source AI SEO Toolkit for Developers</title>
+	<meta name="description" content="Learn about Capyseo, the open source AI-powered SEO toolkit built for developers. Free, framework-agnostic, and designed to make SEO relaxed and approachable." />
+	<link rel="canonical" href="https://capyseo.dev/about" />
+	<meta property="og:title" content="About Capyseo - Open Source AI SEO Toolkit" />
+	<meta property="og:description" content="Learn about Capyseo, the open source AI-powered SEO toolkit built for developers. Free, framework-agnostic, and designed to make SEO relaxed and approachable." />
+	<meta property="og:image" content="https://capyseo.dev/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:url" content="https://capyseo.dev/about" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Capyseo" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="About Capyseo - Open Source AI SEO Toolkit" />
+	<meta name="twitter:description" content="Learn about Capyseo, the open source AI-powered SEO toolkit built for developers." />
+	<meta name="twitter:image" content="https://capyseo.dev/og-image.png" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "AboutPage",
+		"name": "About Capyseo",
+		"description": "Learn about Capyseo, the open source AI-powered SEO toolkit built for developers.",
+		"url": "https://capyseo.dev/about",
+		"mainEntity": {
+			"@type": "Organization",
+			"name": "Capyseo",
+			"url": "https://capyseo.dev"
+		}
+	})}</script>`}
 </svelte:head>
 
 <section class="py-16 border-b">

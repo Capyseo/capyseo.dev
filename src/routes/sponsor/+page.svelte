@@ -27,8 +27,28 @@
 </script>
 
 <svelte:head>
-	<title>Sponsor - Capyseo</title>
-	<meta name="description" content="Support Capyseo development through GitHub Sponsors or cryptocurrency donations." />
+	<title>Sponsor Capyseo - Support Open Source SEO Development</title>
+	<meta name="description" content="Support Capyseo development through GitHub Sponsors, Bitcoin, or Monero donations. Help fund ongoing development, infrastructure, and new features for this open source SEO toolkit." />
+	<link rel="canonical" href="https://capyseo.dev/sponsor" />
+	<meta property="og:title" content="Sponsor Capyseo - Support Open Source SEO" />
+	<meta property="og:description" content="Support Capyseo development through GitHub Sponsors, Bitcoin, or Monero donations. Help fund ongoing development and new features." />
+	<meta property="og:image" content="https://capyseo.dev/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:url" content="https://capyseo.dev/sponsor" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Capyseo" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Sponsor Capyseo - Support Open Source SEO" />
+	<meta name="twitter:description" content="Support Capyseo development through GitHub Sponsors, Bitcoin, or Monero donations." />
+	<meta name="twitter:image" content="https://capyseo.dev/og-image.png" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Sponsor Capyseo",
+		"description": "Support Capyseo development through GitHub Sponsors, Bitcoin, or Monero donations.",
+		"url": "https://capyseo.dev/sponsor"
+	})}</script>`}
 </svelte:head>
 
 <section class="py-16 border-b">

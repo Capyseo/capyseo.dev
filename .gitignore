@@ -55,3 +55,4 @@ coverage
 # Misc
 .cache
 *.tgz
+capyseo-analysis.html

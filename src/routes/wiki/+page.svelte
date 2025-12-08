@@ -36,8 +36,28 @@
 </script>
 
 <svelte:head>
-	<title>Documentation - Capyseo</title>
-	<meta name="description" content="Capyseo documentation - guides, API reference, and integration tutorials." />
+	<title>Wiki - Capyseo SEO Toolkit Documentation & Guides</title>
+	<meta name="description" content="Capyseo documentation - comprehensive guides for SEO rules, API reference, framework integrations, and step-by-step tutorials for developers." />
+	<link rel="canonical" href="https://capyseo.dev/wiki" />
+	<meta property="og:title" content="Wiki - Capyseo SEO Toolkit Documentation" />
+	<meta property="og:description" content="Capyseo documentation - comprehensive guides for SEO rules, API reference, framework integrations, and step-by-step tutorials for developers." />
+	<meta property="og:image" content="https://capyseo.dev/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:url" content="https://capyseo.dev/wiki" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Capyseo" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Wiki - Capyseo SEO Toolkit Documentation" />
+	<meta name="twitter:description" content="Comprehensive guides for SEO rules, API reference, and framework integrations." />
+	<meta name="twitter:image" content="https://capyseo.dev/og-image.png" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Capyseo Wiki",
+		"description": "Capyseo documentation - comprehensive guides for SEO rules, API reference, and framework integrations.",
+		"url": "https://capyseo.dev/wiki"
+	})}</script>`}
 </svelte:head>
 
 <section class="py-16 border-b">

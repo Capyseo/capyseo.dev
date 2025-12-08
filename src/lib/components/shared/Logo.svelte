@@ -16,7 +16,10 @@
 <a href="/" class="group inline-flex {sizes[size].container} items-center gap-2 {className}">
 	<img
 		src="/logo.png"
-		alt=""
+		alt="Capyseo Logo"
+		width="200"
+		height="200"
+		loading="lazy"
 		class="{sizes[size].img} shrink-0 object-contain"
 	/>
 	<span

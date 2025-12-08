@@ -1,16 +1,24 @@
 # capyseo.dev
 
+**Marketing and documentation website** for the Capyseo SEO toolkit.
+
+![Capyseo Website](../assets/banners/capyseo-website-banner.png)
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?logo=typescript)](https://www.typescriptlang.org/)
 [![Svelte 5](https://img.shields.io/badge/Svelte-5.0+-FF3E00?logo=svelte)](https://svelte.dev)
 [![SvelteKit](https://img.shields.io/badge/SvelteKit-2.0+-FF3E00)](https://kit.svelte.dev)
 [![Tailwind CSS 4](https://img.shields.io/badge/Tailwind%20CSS-4.0+-06B6D4?logo=tailwindcss)](https://tailwindcss.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Marketing and documentation website for **[Capyseo](https://capyseo.dev)** — chill SEO for every framework.
+**[Visit Site](https://capyseo.dev)** · **[GitHub](https://github.com/Capyseo/capyseo.dev)** · **[Report Issue](https://github.com/Capyseo/capyseo.dev/issues)**
 
-![capyseo website banner](./assets/capyseo-website-banner.png)
+**Part of the [Capyseo](https://capyseo.dev) toolkit.**
 
-> Beautiful, modern web presence for the Capyseo toolkit with integrated documentation, responsive design, and zero-config dark mode.
+---
+
+## Overview
+
+Beautiful, modern web presence for **[Capyseo](https://capyseo.dev)** — chill SEO for every framework. Features integrated documentation, responsive design, dark mode, and full-text search.
 
 ---
 

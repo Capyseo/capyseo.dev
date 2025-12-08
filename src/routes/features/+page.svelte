@@ -215,8 +215,28 @@
 </script>
 
 <svelte:head>
-	<title>Features - Capyseo</title>
-	<meta name="description" content="Explore 50+ SEO rules across 10 categories with intelligent autofixes. From meta tags to structured data, Capyseo covers every aspect of modern SEO." />
+	<title>Features - 50+ SEO Rules & AI Autofixes | Capyseo</title>
+	<meta name="description" content="Explore 50+ SEO rules across 11 categories with intelligent AI autofixes. From meta tags to structured data, Capyseo covers every aspect of modern SEO." />
+	<link rel="canonical" href="https://capyseo.dev/features" />
+	<meta property="og:title" content="Features - 50+ SEO Rules & AI Autofixes" />
+	<meta property="og:description" content="Explore 50+ SEO rules across 11 categories with intelligent AI autofixes. From meta tags to structured data, Capyseo covers every aspect of modern SEO." />
+	<meta property="og:image" content="https://capyseo.dev/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+	<meta property="og:url" content="https://capyseo.dev/features" />
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="Capyseo" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Features - 50+ SEO Rules & AI Autofixes" />
+	<meta name="twitter:description" content="Explore 50+ SEO rules across 11 categories with intelligent AI autofixes." />
+	<meta name="twitter:image" content="https://capyseo.dev/og-image.png" />
+	{@html `<script type="application/ld+json">${JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "WebPage",
+		"name": "Features - Capyseo SEO Toolkit",
+		"description": "Explore 50+ SEO rules across 11 categories with intelligent AI autofixes.",
+		"url": "https://capyseo.dev/features"
+	})}</script>`}
 </svelte:head>
 
 <!-- Hero Section -->
