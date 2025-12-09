@@ -177,7 +177,7 @@
 </section>
 
 <!-- AI-Powered Autofixes Section -->
-<section class="py-20 bg-gradient-to-br from-cyan-50/50 to-capybara-50/50 dark:from-cyan-950/20 dark:to-capybara-950/20">
+<section class="py-20">
 	<div class="container">
 		<div class="grid md:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
 			<div>
