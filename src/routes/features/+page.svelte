@@ -259,7 +259,7 @@
 </section>
 
 <!-- AI Autofix Highlight Section -->
-<section class="py-16 lg:py-20 bg-gradient-to-br from-cyan-50/50 to-capybara-50/50 dark:from-cyan-950/20 dark:to-capybara-950/20">
+<section class="py-16 lg:py-20">
 	<div class="container">
 		<div class="max-w-4xl mx-auto">
 			<div class="text-center mb-12">

@@ -6,7 +6,7 @@
 </script>
 
 <section class="relative overflow-hidden py-12 lg:py-20">
-	<div class="absolute inset-0 bg-gradient-to-b from-capybara-50/50 to-transparent dark:from-capybara-950/20"></div>
+	<div class="absolute inset-0 bg-gradient-to-b from-transparent to-transparent dark:from-capybara-950/20"></div>
 
 	<div class="container relative">
 		<div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
